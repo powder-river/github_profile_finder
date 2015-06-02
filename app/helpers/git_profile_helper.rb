@@ -1,0 +1,2 @@
+module GitProfileHelper
+end
