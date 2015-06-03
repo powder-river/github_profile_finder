@@ -1,7 +1,39 @@
-<h1>GitProfile#profile_page</h1>
-<p>Find me in app/views/git_profile/profile_page.html.erb</p>
+<%=image_tag @profile.get_image %>
 
-OMG, words!!!!!!
+<div class="name_caption">
+  <%= @profile.get_name %>
+</div>
+
+<div class="profile_caption">
+  <%= @profile.get_login %>
+</div>
+
+<div class="email">
+  <a href="mailto:<%= @profile.get_email %>"><%= @profile.get_email %></a>
+</div>
+
+<div>
+  <%=  @profile.get_join_date.strftime("%B")%>
+</div>
 
 
-<%=image_tag @image_url %>
+
+<div class="repository">>
+  <ul>
+  <% repos = @profile.get_repository
+  repos.each do |a| %>
+    <li><%= a %></li>
+  <% end %>
+
+  </ul>
+</div>
+
+
+<div class="update_at" >
+  <ul>
+  <% something = @profile.last_update
+  something.each do |a| %>
+    <li><%= a %></li>
+  <% end %>
+  </ul>
+</div>

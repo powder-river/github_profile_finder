@@ -1,3 +1,38 @@
 // Place all the styles related to the GitProfile controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.name_caption{
+  font-weight: bold;
+  font-size: 30px
+}
+
+.profile_caption{
+  font-weight:lighter;
+  font-size: 25px;
+  color: rgb(83, 83, 83);
+}
+
+.email{
+  color: blue;
+  font-size: 15px;
+}
+
+.repository >ul{
+  list-style-type: none;
+  position: absolute;
+  top: 0px;
+  left: 500px
+}
+
+.update_at >ul{
+  list-style-type: none;
+  position: absolute;
+  top: 300px;
+  left: 500px
+
+}

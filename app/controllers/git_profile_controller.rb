@@ -4,6 +4,6 @@ class GitProfileController < ApplicationController
   end
 
   def profile_page
-    @image_url = GithubApi.new(params[:name]).get_image
+    @profile = GithubApi.new(params[:name])
   end
 end
